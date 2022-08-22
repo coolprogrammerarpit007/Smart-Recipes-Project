@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(248, 250, 252);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    /* padding: 0;
+    margin: 0; */
+}
+span{
+    color: #3c3799;
+    font-size: 1.5rem;
+}
+
+.wrapper{
+    border: 0px solid green;
+    padding: 1rem 1.5rem;
+}
+
+/* Styling The Navigation Tag */
+
+.navbar{
+    padding: 1rem 1rem 0 0;
+    margin:1rem 1rem 0 0;
+    border: 0px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* box-shadow: 1px 0px 1px 0px gray; */
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    width: 95%;
+    cursor: pointer;
+}
+.nav-logo{
+    border: 0px solid blue;
+    flex-basis: 10%;
+}
+.nav-links{
+    border:0px solid darkblue;
+    flex-basis: 55%;
+}
+.nav-contacts{
+    border: 0px solid goldenrod;
+}
+
+ul{
+    list-style-type: none;
+    border: 0px solid greenyellow;
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    border: 0px solid blueviolet;
+    width: 12%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.nav-contacts{
+    border: 0px solid gold;
+    flex-basis: 7.5%;
+    padding: 0;
+    margin: 0;
+    height: 10px;
+}
+.nav-contacts ul{
+    border: 0px solid green;
+    padding: 0;
+    margin: 0;
+    /* height: 10px; */
+}
+.nav-contacts li{
+    border: 0px solid silver;
+    width: 100%;
+    height: 30px;
+}
+li a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li a:hover{
+    background-color: #BFBFBF;
+    color: #00CCC0;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.nav-contacts a{
+    padding: 0.5rem 0;
+    display: block;
+    text-decoration: none;
+    background-color: rgb(60, 55, 153);
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    border-radius: 5%;
+}
+
+/* **************************************
+ */
+
+ /* ***************************** ***********/
+
+ /* Styling The Header Tag */
+ .header{
+    border:0px solid green;
+    padding: 5rem;
+    margin-top: 7.2rem;
+    width: 100%;
+    background: url(../img/main.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.8;
+ }
+ .header-content{
+    border: 0px solid red;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+ }
+
+ /* ********************************************** */
+
+ /*Styling The Recipes Section  */
+ .recipes{
+    border: 0px solid red;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    justify-content: center;
+    align-content: center;
+ }
+ .recipes-item{
+    border: 0px solid red;
+ }
+ .recipes-item h2{
+    border: 0px solid red;
+    margin-bottom: 0px;
+    padding-left: 1rem;
+    font-weight: lighter;
+ }
+ .recipes-item ul{
+    margin-top: 0;
+    border: 0px solid green;
+    text-align: left;
+ }
+ .recipes-item li{
+    border: 0px solid blue;
+    display: block;
+    padding: 1rem;
+    margin-bottom: 0;
+    font-weight: lighter;
+    font-style: italic;
+    
+ }
+ .recipe-images{
+    border: 0px solid green;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+ }
+.recipes img{
+    
+    max-width: 100%;
+    height: auto;
+}
+
+/* ****************Styling My Footer Section */
+
+footer{
+    background-color: rgb(34, 34, 34);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 1rem;
+}
+footer p{
+    color: white;
+    font-style: italic;
+    font-family: fantasy;
+}
+
+/* *************************************************************************************************************************************************************************************************
+ */
+
+ /* Styling The About Page of the Website */
+ .about-section{
+    margin-top: 7.2rem;
+    padding: 3rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+ }
+ /* Multi-Line Padded Text. */
+ .about-section-content,.paragraph-content{ 
+    line-height: 2.3; 
+    padding: 2px 0; 
+    width: 400px;
+  }
+
+  .about-section-content h3,.paragraph-content p { 
+    
+    padding: 4px 0;
+    display: inline;
+    margin: 0; 
+  }
+  
+  .about-section-img img{
+    border-radius: 5%;
+    margin: 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .about-section-content button{
+    border: none;
+    border-radius: 7%;
+    padding: 0.5rem 0.8rem;
+    background-color: rgb(60, 55, 153);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  .about-section-content button:hover{
+    opacity: 1;
+  }
+
+  /* Styling The Awesome-dishes Section */
+  .my-dishes h2{
+    border: 0px solid red;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: 3px 0 3px 0 white;
+  }
+  .awesome-dishes img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .awesome-dishes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    /* align-content: center; */
+  }
+
+ /* Styling The Tags Page */
+ .section-tags{
+    border: 0px solid green;
+    padding: 3rem 0;
+    margin-top: 7.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 1rem;
+    justify-content: space-around;
+    align-content: center;
+ }
+ .section-tags div{
+    border: 0px solid red;
+    background-color:#10403B;
+    opacity: 0.7;
+    text-align: center;
+    color:white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+ }
+ .section-tags a{
+    display: block;
+ }
+ .section-tags div:hover{
+    cursor: pointer;
+    background-color: #3c3799;
+    box-shadow: 4px 4px 4px 4px #ffffff;
+ }
+
+ /* ************************************* */
+
+ /* Styling The Recipes Page */
+
+ .recipes-page{
+    margin-top: 7.2rem;
+    padding: 3rem;
+ }
